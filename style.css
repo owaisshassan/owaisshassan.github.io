@@ -4,6 +4,11 @@
     --secondary-bg-color:#eee;
     --primary-text-color:#222;
     --secondary-text-color:#666;
+    /* --color-calendar-graph-day-bg: #dddbdb;
+    --color-calendar-graph-day-L1-bg: #39dd34;
+    --color-calendar-graph-day-L2-bg: #45a045;
+    --color-calendar-graph-day-L3-bg: #047526;
+    --color-calendar-graph-day-L4-bg: #0a4208; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
@@ -707,7 +712,8 @@ section{
 }
 
 #email_div{
-    width: 98%;
+    width: 99%;
+    margin-left: 1%;
     height: auto;
     align-items: center;
     margin: auto;
@@ -830,8 +836,22 @@ form>#msg{
 
 #git_chart{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    
+}
+#git_chart img{
+    height: 100%;
+    width: 100%;
 }
 
+#github_stats{
+    display: grid;
+    margin-left: 1%;
+    width: 99%;
+    grid-template-columns: repeat(3,1fr);
+}
+#github_stats img{
+    width: 100%;
+}
 
 
 
@@ -869,6 +889,9 @@ form>#msg{
     .home .image img{
         height: auto;
         width: 100%;
+    }
+    #github_stats{
+        grid-template-columns: repeat(1,1fr);
     }
    
 }
@@ -910,4 +933,10 @@ form>#msg{
     }
    
 }
+
+
+
+
+
+
 
