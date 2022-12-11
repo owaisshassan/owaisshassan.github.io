@@ -45,7 +45,7 @@ $(document).ready(function () {
   });
   
   //email
-  
+ 
   function sendmail() {
     let email = document.getElementById("sender_email");
     let name = document.getElementById("sender_name");
@@ -71,12 +71,11 @@ $(document).ready(function () {
     var templateParams = {
       from_name: document.getElementById("sender_name").value,
       sub: document.getElementById("subject").value,
-      to_name: "Owaiss Hassan",
       mesg: document.getElementById("msg").value,
       from_email: document.getElementById("sender_email").value,
     };
   
-    emailjs.send("service_0fqld7e", "template_iemdnhb", templateParams).then(
+    emailjs.send("service_8nzk7sh", "template_1a37bnc", templateParams).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
       },

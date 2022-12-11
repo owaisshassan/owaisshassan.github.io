@@ -931,6 +931,14 @@ form>#msg{
     #email_btn{
         margin-top: 10%;
     }
+    #formm{
+       margin-top: 2%;
+    }
+    #email_btn{
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    
    
 }
 
