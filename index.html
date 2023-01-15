@@ -12,13 +12,23 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
 
+     <!--=================== SwiperJS CSS ====================-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+         <!--=================== Remixicons ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+     <!--=================== Google Fonts ====================-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+         rel="stylesheet">
+
    
 </head>
 <body>
    
 <!-- header section starts  -->
 
-<header> 
+<!-- <header> 
 
     <div id="menu" class="fas fa-bars"></div>
 
@@ -33,7 +43,47 @@
 
     <div id="theme-toggler" class="fas fa-moon"></div>
 
+</header> -->
+
+
+<!-- new changes (15-jan-2023)  -->
+
+<header id="header" class="header">
+    <div class="nav_container">
+        <nav class="my_nav">
+            <a href="index.html" class="nav__brand">
+                <i class="ri-code-s-slash-line"></i>Owaiss
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li id="h" class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#my_resume" class="nav__link">Resume</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle">
+                <i id="nav-toggle" class="ri-menu-3-line"></i>
+            </div>
+        </nav>
+    </div>
 </header>
+
+<!-- new changes (15-jan-2023) ENDS -->
 
 <!-- header section ends -->
 
@@ -58,8 +108,8 @@
         </h4>
         
 
-        <p>I would love to practice and use my skills to help an organisation uplift by truly folllowing the phrase "Rise by lifting others".</p>
-        <a href="#about" class="btn">about me</a>
+        <p>I would love to practice and use my skills to help an organisation uplift by truly following the phrase "Rise by lifting others".</p>
+        <!-- <a href="#about" class="btn">about me</a> -->
     </div>
 
 </section>
@@ -71,7 +121,7 @@
     <h1 class="heading"> about <span>me</span> </h1>
 <h2 >
     <i class="theme_change" style="font-weight: 300; line-height: 1.5;">
-        Quick learner and an aspiring back-end developer with proficient knowledge of Java , SpringBoot, Maven, Hibernate, HTML, CSS & SQL. Looking forward to apply and enhance my skills as a developer and help an organisation to reach heights alongside my personal success.
+        Quick learner and an aspiring Backend Developer with proficient knowledge of Java , SpringBoot, Maven, Hibernate, HTML, CSS & SQL. Looking forward to apply and enhance my skills as a developer and help an organisation to reach heights alongside my personal success.
        I love to work on projects that challenge my skill-set and develope an urge in me to learn new technologies.
     </i>
 </h2>
@@ -175,10 +225,10 @@
        
 
         <div class="box">
-            <h3 class="title">education</h3>
+            <h3 class="title">Education</h3>
             <div class="exp-box">
                 <h3>Masai School, Bangalore, India</h3>
-                <p>Java back-end Development(Full-time) (Mar 2022-Present).</p>
+                <p>Java Backend Development(Full-time) (Mar 2022-Present).</p>
             </div>
             <div class="exp-box">
                 <h3>JB institute of Technology, Dehradun, India</h3>
@@ -186,14 +236,13 @@
             </div>
         
         </div>
-
+        <div id=my_resume></div>
     </div>
-
     <div id="resume" class="download">
         <a href="Owaiss-Hassan/Resume.pdf" download="Owaiss-Hassan/Resume.pdf" 
-        class="btn"> download Resume   
+        class="btn"> Download resume   
        </a>
-        <a target="_blank" href="https://drive.google.com/file/d/18fYaoUlc6iGfVBjWSu_mTSkv79W2LdF9/view?usp=sharing" class="btn"  >See Resume online 
+        <a target="_blank" href="https://drive.google.com/file/d/18fYaoUlc6iGfVBjWSu_mTSkv79W2LdF9/view?usp=sharing" class="btn"  >See resume online 
          </a>
 
           <!-- <a href="Owaiss-Hassan/Resume.pdf" download="Owaiss-Hassan/Resume.pdf" target="_blank" onclick="window.open(`https://drive.google.com/file/d/18fYaoUlc6iGfVBjWSu_mTSkv79W2LdF9/view?usp=sharing`)"
@@ -270,7 +319,7 @@
                         <li> It is a clone of BeautyBebo website.</li>
                         <li>Beauty Bebo is the online retail store for the need of the Makeup, Skin care, Hair care etc.</li>
                         <li>Team strength: 5</li>
-                        <li>My role: I built few product pages, did page-linking and modifications in style of home-page.</li>
+                        <li>My role: Built few product pages, did page-linking and modifications in style of home-page.</li>
                         <li>Time taken: 6 days</li>
                         <li> Tech stack: HTML, CSS, JavaScript, LocalStorage.</li>
                     </ul>
@@ -301,7 +350,7 @@
                 <li> It is a clone of J.Crew website.</li>
                 <li>J.Crew is fashion clothing store that provides different cool brands of clothing fashion to its customers.</li>
                 <li>Team strength: 5</li>
-                <li>My role: I built complete home-page, did page-linking and modifications in CSS.</li>
+                <li>My role: Built complete home-page, did page-linking and modifications in CSS.</li>
                 <li>Time taken: 6 days</li>
                 <li> Tech stack: HTML, CSS, JavaScript, LocalStorage.</li>
             </ul>
@@ -420,13 +469,13 @@
 
         <form id="formm" action="#" onclick="return false;">
            <div>
-                <input required id="sender_name" type="text" placeholder="enter your name">
-                <input required id="sender_email" type="email" placeholder="enter your email">
+                <input required id="sender_name" type="text" placeholder="Enter your name">
+                <input required id="sender_email" type="email" placeholder="Enter your email">
             </div>
-            <input required id="subject" type="text" placeholder="subject">
-             <textarea required name="" id="msg" cols="30" rows="13"  placeholder="message"></textarea>  
+            <input required id="subject" type="text" placeholder="Subject">
+             <textarea required name="" id="msg" cols="30" rows="13"  placeholder="Message"></textarea>  
             <!-- <input id="msg" type="text" placeholder="message">  -->
-             <button id="email_btn" > send message </button>
+             <button id="email_btn" > Send message </button>
         </form>
        
           <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1617786516134!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>  -->
@@ -450,11 +499,11 @@
 <!-- custom js file link  -->
 <script src="script.js"></script>
 
-
 <script
     type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+
   <script type="text/javascript">
     (function () {
       emailjs.init("K2Dud-3zWp6YZuU-L");
@@ -463,7 +512,16 @@
 
 
 
-</script>
+ <!-- new changes (15-jan-2023)  -->
+
+
+<!--=================== SwiperJS  ====================-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!--=================== ScrollReveal ==================-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
 
 </body>
 </html>

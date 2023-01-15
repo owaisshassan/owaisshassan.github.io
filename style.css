@@ -17,7 +17,7 @@
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     outline: none; border:none;
     text-decoration: none;
     transition:all .3s cubic-bezier(.38,1.15,.7,1.12);
@@ -131,7 +131,7 @@ section{
     transform:rotate(-180deg);
 }
 
-.navbar{
+/* .navbar{
     position: fixed;
     top:2.0rem; right:2.5rem;
     padding:1.1rem 2rem;
@@ -148,9 +148,9 @@ section{
 .navbar.nav-toggle{
     opacity: 1;
     transform: scale(1);
-}
+} */
 
-.navbar a{
+/* .navbar a{
     
     font-size: 2rem;
     padding:0.3rem;
@@ -171,7 +171,7 @@ section{
 .navbar a:hover{
     color:var(--main-color);
     transform: translateX(1rem);
-}
+} */
 
 .home{
     display: flex;
@@ -746,6 +746,7 @@ form>#msg{
     /* height: 220px; */
     padding-left:2%;
     padding-top: 1%;
+    resize: none;
 }
 #coding_skills{
     padding: 3%;
@@ -880,8 +881,30 @@ form>#msg{
     .project_btn{
        margin-left: 400%;
     }
- 
-   
+      
+
+    /* new changes (15-jan-2023) */
+      
+      .my_nav {
+        height: 50px;
+        overflow: hidden;
+      }
+      
+      .nav__brand {
+        visibility: hidden;
+      }
+      
+      
+      .nav__list {
+        column-gap: 1rem;
+        margin-left: -24%;
+      }
+    
+      .nav__list .nav__item>a{
+        font-size:small;
+    }
+    #h{visibility:hidden;}
+      
 }
 
 @media (max-width:768px){
@@ -944,7 +967,143 @@ form>#msg{
 
 
 
+ /* new changes (15-jan-2023) */
 
 
+.nav_container {
+    width: 100%;
+    max-width: var(--width-container);
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+  }
+
+  
+/* Header
+--------------------------------------------------------------*/
+.header {
+    background-color: var(--color-bg-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: var(--height-header);
+    z-index: var(--zindex-menu);
+    z-index: 10000;
+    transition: var(--transition);
+    background: #4c84ff;
+  }
+  
+  .header--scroll {
+    height: var(--height-header--scroll);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .my_nav {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 55px;
+    overflow: hidden;
+  }
+  
+  .nav__brand {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav__brand i {
+    color: var(--color-white);
+  }
+  
+  .nav__list {
+    display: flex;
+    column-gap: 4rem;
+  }
+  
+  .nav__list li{
+    /* border: 1px solid red; */
+    list-style: none;
+    padding: 10px;
+  }
+
+  
+  .nav__link {
+    transition: var(--transition);
+  }
+  
+  .nav__link:hover {
+    color: var(--color-primary);
+  }
+  
+  .nav__toggle {
+    display: none;
+    font-size: var(--fs-xl);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .nav__toggle:hover {
+    color: var(--color-primary);
+  }
+  
+  /* @media screen and (max-width: 968px) {
+    .nav__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 4rem;
+    }
+  
+    .nav__menu {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--color-bg-primary);
+      display: none;
+      justify-content: center;
+      transition: var(--transition);
+    }
+  
+    .nav__menu--open {
+      display: flex;
+    }
+  
+    .nav__toggle {
+      display: block;
+    }
+  
+    .nav__brand,
+    .nav__toggle {
+      z-index: var(--zindex-fixed);
+    }
+  } */
+  
+  /* Hero
+  --------------------------------------------------------------*/
 
 
+.nav__list .nav__item>a{
+    font-size:larger;
+    color: white;
+    font-weight: bold;
+}
+
+.nav__list .nav__item>a:hover{
+    color:var(--primary-text-color);
+    /* background-color: var(--primary-bg-color); */
+}
+ /* new changes (15-jan-2023)  END*/
